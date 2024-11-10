@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Vocabulary</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Computer Science Vocabulary</h1>
+    <button onclick="toggleLanguage('english')">Toggle English</button>
+    <button onclick="toggleLanguage('hebrew')">Toggle Hebrew</button>
+    <table>
+        <thead>
+            <tr>
+                <th>English</th>
+                <th>Hebrew</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="row1">
+                <td class="english" onclick="showTranslation(this)">Algorithm</td>
+                <td class="hebrew" onclick="showTranslation(this)" style="display:none;">אלגוריתם</td>
+            </tr>
+            <tr class="row2">
+                <td class="english" onclick="showTranslation(this)">Data</td>
+                <td class="hebrew" onclick="showTranslation(this)" style="display:none;">נתונים</td>
+            </tr>
+            <!-- Add more words here -->
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
